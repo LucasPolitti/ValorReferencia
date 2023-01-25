@@ -17,8 +17,8 @@ public class ValorReferencia {
 
     }
 
-    public static void conferirNotas(int[] nt, int[] r){
-
+    public static void conferirNotas(int[] nt, int[] r){ //passagem por referência, aparecem os valores no main
+                                                         
         for(int n:nt){
             if(n>60){
                 r[0]++;
@@ -26,7 +26,15 @@ public class ValorReferencia {
                 r[1]++;
             }
         }
-
+        /*public static void conferirNotas(int[] nt, int a, int r){ //passagem por valores, não aparecem os valores
+                                                                      quando chamamos no main
+        for(int n:nt){       
+            if(n>60){
+                a++;
+            }else{
+                r++;
+            }
+        } */
         //System.out.printf("Aprovados.:%d%n", a);
         //System.out.printf("Reprovados:%d%n", r);
 
